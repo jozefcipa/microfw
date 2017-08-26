@@ -1,6 +1,8 @@
 # MicroFW
 ### When Laravel is overkill and "from scratch" is for nerds
 
+![](http://i.imgur.com/Y4pPEEt.png)
+
 ## Get started
 
 1. Download this project and start using! 
