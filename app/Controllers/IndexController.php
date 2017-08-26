@@ -4,16 +4,23 @@ namespace Controllers;
 use Support\Controller;
 
 class IndexController extends Controller {
+
+	public function before() {
+		// before middleware
+	}
 	
-	public function home() {
+	public function home($paramFromUrl) {
+
+		// handling code
 
 
-		return $this->view('home', [
-			'helloMessage' => 'called via controller view method'
-		]);
-
+		// set HTML template
 		return view('home', [
-			'helloMessage' => 'called via view helper from controller'
+			'paramToView' => 'value'
 		]);
+	}
+
+	public function after() {
+		// after middleware
 	}
 }

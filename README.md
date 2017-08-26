@@ -39,13 +39,51 @@ $router->get('/detail/:id', function($id) {
 
 ### Controllers
 
-- example
-- middlewares
+```
+// app/Controllers directory
 
+namespace Controllers;
+use Support\Controller;
+
+class IndexController extends Controller {
+
+	public function before() {
+		// before middleware
+	}
+	
+	public function home($paramFromUrl) {
+
+		// handling code
+
+
+		// set HTML template
+		return view('home', [
+			'paramToView' => 'value'
+		]);
+	}
+
+	public function after() {
+		// after middleware
+	}
+}
+```
+
+### Views
+- When you are returning view, there are automatically included `views/_header.phtml` and `views/_footer.phtml` files.
+- You can set view using `view()` helper or in controller using bound `$this->view()` with the same params
+```
+
+// in your controller or route handler
+return view('home', ['foo' => 'bar']);
+
+// views/home.phtml
+<span>Something's here: <?=$foo?></span>
+
+```
 
 ### helper classes and functions
 
-- Support\Storage
+- *Support\Storage*
 	- uploadFile($sourcePath, $destinationPath)
 	- uploadImage($sourcePath, $destinationPath, $createThumb = false)
 	- list($path, $pattern = '*')
