@@ -59,7 +59,7 @@ $config = [
 		'NAME' 		=> '',
 		'DB_NAME' 	=> '',
 		'PASSWORD' 	=> '',
-		'PORT' 		=> 3311
+		'PORT' 		=> 3306
 	],
 	'imageThumb' => [
 		'width'  => 69,

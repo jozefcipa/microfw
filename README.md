@@ -91,8 +91,11 @@ return view('home', ['foo' => 'bar']);
 	- list($path, $pattern = '*')
 	- deleteFile($path)
 	- moveFile($path, $newPath)
-
-
+- *Support\DB*
+	- connect($config) // creates connection, can be used like: Support\DB::connect(config('DB'))
+	- getRow($query, $params = [])
+	- getAll($query, $params = [])
+	- execute($query, $params = [])
 - *helpers*
 	- **asset($filename)**
 	``` 
