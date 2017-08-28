@@ -81,3 +81,7 @@ function url($uri) {
 function view($viewName, array $data = []) {
 	return new Support\View($viewName, $data);
 }
+
+function collect($value = null){
+	return new Support\Laravel\Collection($value);
+}

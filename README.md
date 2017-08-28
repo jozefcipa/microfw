@@ -96,6 +96,12 @@ return view('home', ['foo' => 'bar']);
 	- getRow($query, $params = [])
 	- getAll($query, $params = [])
 	- execute($query, $params = [])
+- *Support\Laravel\Arr*
+	- Official [Laravel documentation](https://laravel.com/docs/5.4/helpers#arrays)
+- *Support\Laravel\Collection*
+	- Official [Laravel documentation](https://laravel.com/docs/5.4/eloquent-collections)
+- *Support\Laravel\Str*
+	- Official [Laravel documentation](https://laravel.com/docs/5.4/helpers#strings)
 - *helpers*
 	- **asset($filename)**
 	``` 
@@ -122,3 +128,8 @@ return view('home', ['foo' => 'bar']);
 
 	- **view($viewName, array $data = [])**
 		- returns HTML view
+	- **collect($data)**
+		- Creates `Support\Laravel\Collection` instance
+
+
+*Note*: All files in namespace `Support\Laravel` are from official [Laravel framework](https://github.com/laravel/framework/)
