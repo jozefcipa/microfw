@@ -70,4 +70,4 @@ $config = [
 ];
 
 // connect to DB
-// Support\DB::connect(config('DB'));
+Support\DB::connect(config('DB'));

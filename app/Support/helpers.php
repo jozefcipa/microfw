@@ -35,7 +35,7 @@ function getFlashMessages($name) {
 }
 
 function redirect($url) {
-	header("Location: ". config("BASE_URL") .ltrim($url, "/"));
+	header("Location: ". config("BASE_URL") . '/' . ltrim($url, "/"));
 	exit;
 }
 
